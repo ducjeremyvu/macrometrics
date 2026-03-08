@@ -40,8 +40,8 @@ else
     Xex = [];
 end
 X = [c, X, Xex];
-Xinreg = X(timeinreg == 1,:);
-Yinreg = Y(timeinreg == 1,:);
+Xinreg = X(logical(timeinreg),:);
+Yinreg = Y(logical(timeinreg),:);
 
 %% Estimation
 A = Xinreg\Yinreg;  % a_ij is reaction of column j to row i

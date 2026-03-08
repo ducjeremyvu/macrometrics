@@ -7,12 +7,12 @@
 rm(list = ls())
 
 # before running, set working directory to source file location and comment out the following line
-setwd('~/Dropbox/Teaching/Basel2025/macrometrics/')
+setwd('~/Dropbox/Teaching/Basel2026/macrometrics/')
 source('_tbx/supportfct/compileRfct.R');
 
 
 ## Import
-xlsdata <- read.xlsx('data/data_m_in.xlsx', 1, stringsAsFactors=F)
+xlsdata <- read.xls('data/data_m_in.xlsx', 1, stringsAsFactors=F)
 data <- xlsdata[,3:ncol(xlsdata)]
 labels <- colnames(data)
 
