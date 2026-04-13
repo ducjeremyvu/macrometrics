@@ -7,7 +7,7 @@
 rm(list = ls())
 
 # before running, set working directory to source file location and comment out the following line
-setwd('~/Dropbox/Teaching/Basel2026/macrometrics/')
+setwd('./files/empiric-tools/macrometrics')
 source('_tbx/supportfct/compileRfct.R');
 
 
